@@ -1,3 +1,7 @@
+python3 << 'PYEOF'
+content = '''#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "dissect.dtsi"
 
@@ -18,3 +22,9 @@
         , <&gpio0 29 (GPIO_ACTIVE_HIGH)>
         ;
 };
+'''
+
+with open('/home/kdyorn/zmk-config/config/boards/shields/dissect/dissect_right.overlay', 'w') as f:
+    f.write(content)
+print("Done!")
+PYEOF
