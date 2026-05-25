@@ -1,3 +1,4 @@
+cat > ~/zmk-config/config/boards/shields/dissect/dissect.dtsi << 'EOF'
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
@@ -44,3 +45,4 @@
         ;
     };
 };
+EOF
