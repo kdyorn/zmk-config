@@ -1,6 +1,4 @@
 cat > ~/zmk-config/config/boards/shields/dissect/dissect.dtsi << 'EOF'
-#include <dt-bindings/zmk/matrix_transform.h>
-
 / {
     chosen {
         zmk,kscan = &kscan0;
@@ -23,7 +21,6 @@ cat > ~/zmk-config/config/boards/shields/dissect/dissect.dtsi << 'EOF'
 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
-        label = "KSCAN";
         diode-direction = "col2row";
 
         row-gpios
