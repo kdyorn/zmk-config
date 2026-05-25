@@ -1,8 +1,5 @@
 python3 << 'PYEOF'
-content = '''#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/matrix_transform.h>
+content = '''#include <dt-bindings/zmk/matrix_transform.h>
 #include "dissect.dtsi"
 
 &default_transform {
@@ -21,8 +18,7 @@ content = '''#include <behaviors.dtsi>
         ;
 };
 '''
-
 with open('/home/kdyorn/zmk-config/config/boards/shields/dissect/dissect_left.overlay', 'w') as f:
     f.write(content)
-print("Done!")
+print("dissect_left.overlay done!")
 PYEOF
