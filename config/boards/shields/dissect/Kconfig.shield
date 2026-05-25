@@ -1,0 +1,5 @@
+config SHIELD_DISSECT_LEFT
+    def_bool $(shields_list_contains,dissect_left)
+
+config SHIELD_DISSECT_RIGHT
+    def_bool $(shields_list_contains,dissect_right)
