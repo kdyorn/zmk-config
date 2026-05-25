@@ -1,6 +1,6 @@
 ---
 include:
-  - board: promicro_nrf52840
+  - board: nice_nano//zmk
     shield: dissect_left
-  - board: promicro_nrf52840
+  - board: nice_nano//zmk
     shield: dissect_right
