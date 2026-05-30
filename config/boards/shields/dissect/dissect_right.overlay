@@ -1,5 +1,12 @@
 #include "dissect.dtsi"
 
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,matrix_transform = &default_transform;
+    };
+};
+
 &default_transform {
     col-offset = <7>;
 };

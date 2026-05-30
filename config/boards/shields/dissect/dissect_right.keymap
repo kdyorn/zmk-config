@@ -1,41 +1,37 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
 
 / {
     keymap {
         compatible = "zmk,keymap";
 
         base_layer {
-            label = "BASE";
             bindings = <
-                         &kp N7   &kp N8   &kp N9   &kp N0   &kp MINUS &kp EQUAL &kp BSPC &kp DEL
-                &kp Y    &kp U    &kp I    &kp O    &kp P    &kp LBKT  &kp RBKT  &kp BSLH &kp C_AL_CALC
-                &kp H    &kp J    &kp K    &kp L    &kp SEMI &kp SQT             &kp RET  &kp PG_UP
-                &kp N    &kp M    &kp COMMA &kp DOT &kp FSLH           &kp RSFT  &kp UP   &kp PG_DN
-                         &kp SPACE         &kp RALT &kp RCTL &mo 1     &kp LEFT  &kp DOWN &kp RIGHT
+                         &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans   &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans   &trans &trans &trans &trans &trans        &trans &trans
+                &trans   &trans &trans &trans &trans        &trans &trans &trans
+                         &trans        &trans &trans &trans &trans &trans &trans
             >;
         };
 
         fn_layer {
-            label = "FN";
             bindings = <
-                         &kp F7  &kp F8  &kp F9  &kp F10 &kp F11 &kp F12 &trans &trans
-                &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans   &trans  &trans  &trans  &trans  &trans          &trans  &trans
-                &trans   &trans  &trans  &trans  &trans          &trans  &trans  &trans
-                         &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans   &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans   &trans &trans &trans &trans &trans        &trans &trans
+                &trans   &trans &trans &trans &trans        &trans &trans &trans
+                         &trans        &trans &trans &trans &trans &trans &trans
             >;
         };
 
         num_layer {
-            label = "NUM";
             bindings = <
-                         &trans  &kp N7  &kp N8  &kp N9  &trans  &trans  &trans  &trans
-                &trans   &trans  &kp N4  &kp N5  &kp N6  &trans  &trans  &trans  &trans
-                &trans   &trans  &kp N1  &kp N2  &kp N3  &trans          &trans  &trans
-                &trans   &kp N0  &trans  &trans  &trans          &trans  &trans  &trans
-                         &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans   &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans   &trans &trans &trans &trans &trans        &trans &trans
+                &trans   &trans &trans &trans &trans        &trans &trans &trans
+                         &trans        &trans &trans &trans &trans &trans &trans
             >;
         };
     };
