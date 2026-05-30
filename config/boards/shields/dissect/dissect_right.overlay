@@ -1,7 +1,9 @@
 #include "dissect.dtsi"
 
-&default_transform {
-    col-offset = <7>;
+/ {
+    chosen {
+        zmk,matrix_transform = &right_transform;
+    };
 };
 
 &kscan0 {
