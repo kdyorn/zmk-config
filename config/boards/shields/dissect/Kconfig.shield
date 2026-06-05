@@ -3,3 +3,6 @@ config SHIELD_DISSECT_LEFT
 
 config SHIELD_DISSECT_RIGHT
     def_bool $(shields_list_contains,dissect_right)
+
+config SHIELD_DISSECT_DONGLE
+    def_bool $(shields_list_contains,dissect_dongle)
