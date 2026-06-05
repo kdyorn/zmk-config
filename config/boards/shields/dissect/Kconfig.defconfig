@@ -9,7 +9,7 @@ config ZMK_SPLIT
 config ZMK_SPLIT_BLE
     default y
 
-if SHIELD_DISSECT_LEFT || SHIELD_DISSECT_DONGLE
+if SHIELD_DISSECT_DONGLE
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 endif
