@@ -168,9 +168,9 @@
             bindings = <
                 &kp ESC     &revit_dv &revit_mc &revit_ci &revit_cc &revit_cs &kp DEL                          &trans  &trans  &trans  &trans  &trans  &trans  &trans &trans &trans
                 &revit_dm   &revit_al &revit_di &revit_rp &revit_dg &revit_mv &revit_el                        &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans
-                            &kp TAB   &revit_eh &revit_eu &revit_hr &revit_ic &revit_rh                &kp KP_N4   &kp KP_N5  &kp KP_N6  &trans  &trans  &trans  &trans  &trans         &trans
-                            &kp RET   &revit_dl &revit_tl &revit_tx &revit_tg &revit_rv                &kp KP_N1   &kp KP_N2  &kp KP_N3  &trans  &trans  &trans          &trans         &trans
-                            &kp LSFT  &revit_s2 &kp KP_PLUS &revit_ds &revit_bx &revit_vv                &kp KP_N0   &trans  &trans  &trans  &trans          &trans          &trans  &trans
+                            &kp TAB   &revit_eh &revit_eu &revit_hr &revit_ic &revit_rh                &kp N4   &kp N5  &kp N6  &trans  &trans  &trans  &trans  &trans         &trans
+                            &kp RET   &revit_dl &revit_tl &revit_tx &revit_tg &revit_rv                &kp N1   &kp N2  &kp N3  &trans  &trans  &trans          &trans         &trans
+                            &kp LSFT  &revit_s2 &kp KP_PLUS &revit_ds &revit_bx &revit_vv                &kp N0   &trans  &trans  &trans  &trans          &trans          &trans  &trans
                 &kp LCTL    &kp LGUI  &kp LALT  &mo 1               &kp SPACE                                  &trans          &trans  &tog 2  &trans  &trans          &trans  &trans
             >;
         };
