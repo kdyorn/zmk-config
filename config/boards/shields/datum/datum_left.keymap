@@ -124,6 +124,16 @@
             #binding-cells = <0>;
             bindings = <&kp C &kp I>;
         };
+        revit_bx: revit_bx {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp B &kp X>;
+        };
+        revit_vv: revit_vv {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &kp V>;
+        };
     };
 
     keymap {
@@ -148,8 +158,8 @@
                 &trans      &trans &trans &trans &trans &trans &trans                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans
                             &trans &trans &trans &trans &trans &trans                                  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans
                             &trans &trans &trans &trans &trans &trans                                  &trans   &trans  &trans  &trans  &trans  &trans          &trans         &trans
-                            &trans &trans &trans &trans &trans &trans                                  &trans   &trans  &trans  &trans  &trans          &trans          &trans  &trans
-                &trans      &trans &trans &trans         &trans                                                &trans          &trans  &trans  &trans  &trans          &trans  &trans
+                            &trans &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(LS(Z))                                  &trans   &trans  &trans  &trans  &trans          &trans          &kp C_VOL_UP  &trans
+                &trans      &trans &trans &trans         &trans                                                &trans          &trans  &trans  &trans  &kp C_PREV          &kp C_VOL_DN  &kp C_NEXT
             >;
         };
 
@@ -158,9 +168,9 @@
             bindings = <
                 &kp ESC     &revit_dv &revit_mc &revit_ci &revit_cc &revit_cs &kp DEL                          &trans  &trans  &trans  &trans  &trans  &trans  &trans &trans &trans
                 &revit_dm   &revit_al &revit_di &revit_rp &revit_dg &revit_mv &revit_el                        &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans
-                            &kp TAB   &revit_eh &revit_eu &revit_hr &revit_ic &revit_rh                &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans
-                            &kp RET   &revit_dl &revit_tl &revit_tx &revit_tg &revit_rv                &trans   &trans  &trans  &trans  &trans  &trans          &trans         &trans
-                            &kp LSFT  &revit_s2 &kp KP_PLUS &revit_ds &kp PG_UP &kp PG_DN                &trans   &trans  &trans  &trans  &trans          &trans          &trans  &trans
+                            &kp TAB   &revit_eh &revit_eu &revit_hr &revit_ic &revit_rh                &kp KP_N4   &kp KP_N5  &kp KP_N6  &trans  &trans  &trans  &trans  &trans         &trans
+                            &kp RET   &revit_dl &revit_tl &revit_tx &revit_tg &revit_rv                &kp KP_N1   &kp KP_N2  &kp KP_N3  &trans  &trans  &trans          &trans         &trans
+                            &kp LSFT  &revit_s2 &kp KP_PLUS &revit_ds &revit_bx &revit_vv                &kp KP_N0   &trans  &trans  &trans  &trans          &trans          &trans  &trans
                 &kp LCTL    &kp LGUI  &kp LALT  &mo 1               &kp SPACE                                  &trans          &trans  &tog 2  &trans  &trans          &trans  &trans
             >;
         };
