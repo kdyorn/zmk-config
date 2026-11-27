@@ -20,3 +20,6 @@ include:
     shield: kommanddeck
   - board: xiao_ble//zmk
     shield: kommanddeck_dongle prospector_adapter
+  - board: xiao_ble//zmk
+    shield: kommanddeck_dongle
+    artifact-name: kommanddeck_dongle_noscreen
